@@ -23,7 +23,7 @@ namespace SOFOIAN_EF_HT1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SOFOIAN_EF_HT1.MVVM.Model.OrderModel", b =>
+            modelBuilder.Entity("SOFOIAN_EF_HT1.MVVM.Model.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
