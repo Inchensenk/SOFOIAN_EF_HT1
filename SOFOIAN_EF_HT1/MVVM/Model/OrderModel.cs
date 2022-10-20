@@ -10,5 +10,8 @@ namespace SOFOIAN_EF_HT1.MVVM.Model
     {
         public int Id { get; set; }
         public double Summ { get; set; }
+
+        //NULL
+        public DateTime? Date { get; set; }
     }
 }

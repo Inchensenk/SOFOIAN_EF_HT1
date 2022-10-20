@@ -21,9 +21,9 @@ namespace SOFOIAN_EF_HT1
         /// </summary>
         public MyDbContext()
         {
-            Database.EnsureCreated();//если БД не создана то она создастся
+            //Database.EnsureCreated();//если БД не создана то она создастся
 
-            var canConnect = Database.CanConnect();//дает ответ, можем подключиться к бд или нет
+            //var canConnect = Database.CanConnect();//дает ответ, можем подключиться к бд или нет
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
