@@ -37,16 +37,16 @@ namespace SOFOIAN_EF_HT1
         }
         private void OnUserCreated(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=30, Summ = 52000.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=31, Summ = 53555.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=32, Summ = 2652000.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=33, Summ = 535872000.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=34, Summ = 52025600.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=35, Summ = 52000.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=36, Summ = 53555.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=37, Summ = 2652000.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=38, Summ = 535872000.33 });
-            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id = 39 , Summ = 52025600.33 });
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=30, Summ = 52000.33 , Date=DateTime.Parse("1976-05-21") });
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=31, Summ = 53555.33, Date = DateTime.Parse("1976-05-21") });
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=32, Summ = 2652000.33 , Date=DateTime.Parse("1976-05-21")});
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=33, Summ = 535872000.33, Date=DateTime.Parse("1976-05-21") });
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=34, Summ = 52025600.33 , Date=DateTime.Parse("1976-05-21")});
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=35, Summ = 52000.33 , Date=DateTime.Parse("1976-05-21")});
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=36, Summ = 53555.33 , Date=DateTime.Parse("1976-05-21")});
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=37, Summ = 2652000.33 , Date=DateTime.Parse("1976-05-21")});
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id=38, Summ = 535872000.33 , Date=DateTime.Parse("1976-05-21")});
+            modelBuilder.Entity<OrderModel>().HasData(new OrderModel { Id = 39, Summ = 52025600.33 , Date=DateTime.Parse("1976-05-21")});
         }
     }
 }
