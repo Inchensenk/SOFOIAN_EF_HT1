@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Microsoft.EntityFrameworkCore;
+using Prism.Commands;
 using SOFOIAN_EF_HT1.MVVM.Core;
 using SOFOIAN_EF_HT1.MVVM.Model;
 using System;
@@ -29,7 +30,7 @@ namespace SOFOIAN_EF_HT1.MVVM.ViewModel
         {
             using (MyDbContext context = new MyDbContext())
             {
-
+                
                 OrderModel order1 = new OrderModel { Summ = 52000.50 };
                 OrderModel order2 = new OrderModel { Summ = 125255.25 };
                 OrderModel order3 = new OrderModel { Summ = 1000259.59 };
@@ -37,14 +38,17 @@ namespace SOFOIAN_EF_HT1.MVVM.ViewModel
                 OrderModel order5 = new OrderModel { Summ = 12524445.25 };
                 OrderModel order6 = new OrderModel { Summ = 10005454259.59 };
                 OrderModel order7 = new OrderModel { Summ = 5200444440.50 };
-                OrderModel order8 = new OrderModel { Summ = 124545454545255.25 };
-                OrderModel order9 = new OrderModel { Summ = 10002454545454459.59 };
+                OrderModel order8 = new OrderModel { Summ = 124545454545.25 };
+                OrderModel order9 = new OrderModel { Summ = 100024545.59 };
 
                 context.Orders.AddRange(order1, order2, order3, order4, order5, order6, order7, order8, order9);
                 context.SaveChanges();
 
             }
+
+
         }
 
+        
     }
 }

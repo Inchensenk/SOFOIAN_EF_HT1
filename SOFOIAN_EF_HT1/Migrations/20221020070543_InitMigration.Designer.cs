@@ -11,8 +11,8 @@ using SOFOIAN_EF_HT1;
 namespace SOFOIAN_EF_HT1.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20221019132210_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20221020070543_InitMigration")]
+    partial class InitMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,7 +23,7 @@ namespace SOFOIAN_EF_HT1.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("SOFOIAN_EF_HT1.MVVM.Model.Order", b =>
+            modelBuilder.Entity("SOFOIAN_EF_HT1.MVVM.Model.OrderModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
