@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:SOFOIAN_EF_HT1"
              StartupUri="MVVM/View/MainWindow.xaml">
     <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Styles/RoundedButtonStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
          
     </Application.Resources>
 </Application>

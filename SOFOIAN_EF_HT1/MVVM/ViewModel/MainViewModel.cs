@@ -29,8 +29,8 @@ namespace SOFOIAN_EF_HT1.MVVM.ViewModel
         {
             using (MyDbContext context = new MyDbContext())
             {
-               
-                OrderModel order1 = new OrderModel { Summ=52000.50};
+
+                OrderModel order1 = new OrderModel { Summ = 52000.50 };
                 OrderModel order2 = new OrderModel { Summ = 125255.25 };
                 OrderModel order3 = new OrderModel { Summ = 1000259.59 };
                 OrderModel order4 = new OrderModel { Summ = 525455000.50 };

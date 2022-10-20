@@ -76,9 +76,11 @@
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button
-                    Content="Магия ENTITY FRAMEWORK CORE"
-                    Command="{Binding ClickCommand}"/>
+            
+            <Button Content="Магия ENTITY FRAMEWORK CORE"
+                    Command="{Binding ClickCommand}"
+                    Style="{StaticResource RoundedButtonStyle}"
+                />
 
             <ListView Grid.Row="3"  ItemsSource="{Binding Orders}">
                 <ListView.View>
