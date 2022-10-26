@@ -28,7 +28,7 @@ namespace SOFOIAN_EF_HT1
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=s-dev-01; Database=SOF_EF_HT1; Trusted_Connection=True; Encrypt=false") ;
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\\mssqllocaldb; Database=SOF_EF_HT1; Trusted_Connection=True; Encrypt=false") ;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
