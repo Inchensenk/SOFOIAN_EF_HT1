@@ -38,7 +38,7 @@ namespace SOFOIAN_EF_HT1.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
 
                     b.HasData(
                         new
